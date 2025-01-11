@@ -17,7 +17,6 @@ function render(array) {
         <h6 class="card-subtitle mb-2 text-body-secondary">${restaurant.cuisine}</h6>
         <p class="card-text">${restaurant.location}</p>
         <p class="card-text">${restaurant.rating}</p>
-        <p class="card-text">${active}</p>
         </div>
         </div>`;
     document.getElementById("restaurant").innerHTML += card;
