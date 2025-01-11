@@ -12,7 +12,7 @@ function render(array) {
 
     let card = `
         <div class="card" style="width:18rem;">
-        <div class="card-"card body">
+        <div class="card-body">
         <h5 class="card-title">${restaurant.name}</h5>
         <h6 class="card-subtitle mb-2 text-body-secondary">${restaurant.cuisine}</h6>
         <p class="card-text">${restaurant.location}</p>
@@ -20,7 +20,7 @@ function render(array) {
         <p class="card-text">${active}</p>
         </div>
         </div>`;
-    document.getElementById("main").innerHTML += card;
+    document.getElementById("restaurant").innerHTML += card;
   }
 }
 render(restaurant);

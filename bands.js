@@ -8,17 +8,18 @@ const bands = [
 
 function render(array) {
   for (let i = 0; i < array.length; i++) {
+    let active = "";
     const bands = array[i];
 
-     if (bands.active)  {
-      active = "Active";
-     } else {
+    if (bands.active) {
+      Active = "Active";
+    } else {
       active = "Not Active";
-     }
+    }
 
     let card = `
         <div class="card" style="width:18rem;">
-        <div class="card-"card body">
+        <div class="card- body">
         <h5 class="card-title">${bands.name}</h5>
         <h6 class="card-subtitle mb-2 text-body-secondary">${bands.cuisine}</h6>
         <p class="card-text">${bands.location}</p>
@@ -26,7 +27,7 @@ function render(array) {
         <p class="class-text>${active}</p>
         </div>
         </div>`;
-    document.getElementById("main").innerHTML += card;
+    document.getElementById("bands").innerHTML += card;
   }
 }
 render(bands);
