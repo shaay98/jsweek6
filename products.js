@@ -8,7 +8,13 @@ const products = [
 
 function render(array) {
   for (let i = 0; i < array.length; i++) {
-    const products = array[i];
+    const products = array[i]; 
+
+    if (products.inStock) {
+      inStock = "Is Stocked"
+    } else {
+      inStock = "Not Stocked";
+    }
 
     let card = `
         <div class="card" style="width:18rem;">
@@ -17,6 +23,7 @@ function render(array) {
         <h6 class="card-subtitle mb-2 text-body-secondary">${products.cuisine}</h6>
         <p class="card-text">${products.location}</p>
         <p class="card-text">${products.rating}</p>
+        <p class="class-text">${active}</p>
         </div>
         </div>`;
     document.getElementById("main").innerHTML += card;
